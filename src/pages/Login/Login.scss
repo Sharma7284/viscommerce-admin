@@ -1,0 +1,23 @@
+.Login-Page {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+  margin: 0 auto;
+  gap: 2rem;
+
+  .Login-Page-Image-Holder {
+    flex: 2;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Login-Page-Form {
+    flex: 1;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

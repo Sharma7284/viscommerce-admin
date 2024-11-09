@@ -1,0 +1,14 @@
+.custom-view-card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+
+  .card-number {
+    text-align: center;
+  }
+  .card-title {
+    white-space: nowrap;
+  }
+}

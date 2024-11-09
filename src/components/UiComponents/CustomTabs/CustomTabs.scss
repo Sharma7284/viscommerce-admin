@@ -1,0 +1,24 @@
+.custom-tabs {
+  display: flex;
+  gap: 20px;
+  .tabBtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 12px 0;
+    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &.is-active {
+      color: red;
+      box-shadow: 0 2px 0 0 red;
+    }
+  }
+}

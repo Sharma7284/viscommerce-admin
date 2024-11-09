@@ -1,0 +1,27 @@
+.sidebar {
+  width: 220px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  .sidebar-logo-holder {
+    padding: 12px 20px;
+    display: flex;
+    height: 48px;
+    .sidebar-logo-image {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .sidebar-menus {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .menu-bottom {
+      margin-bottom: 10px;
+    }
+  }
+}

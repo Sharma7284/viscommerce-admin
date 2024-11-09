@@ -1,0 +1,11 @@
+.custom-search-box {
+  input {
+    border: 2px solid #eee;
+    padding: 8px 12px;
+    border-radius: 8px;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

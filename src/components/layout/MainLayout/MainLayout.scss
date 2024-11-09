@@ -1,0 +1,22 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  align-items: stretch;
+
+  .layout-sidebar {
+    border-right: 2px solid #eee;
+  }
+
+  .layout {
+    flex: 1;
+
+    .layout-header {
+      border-bottom: 2px solid #eee;
+      padding: 16px;
+    }
+
+    .layout-content {
+      padding: 16px;
+    }
+  }
+}
