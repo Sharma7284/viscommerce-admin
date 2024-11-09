@@ -20,10 +20,10 @@ const CustomTables = ({
   const handleSendMail = async (email) => {
     setSendBtn(true);
 
-    setTimeout(() => {
+    const emailInfo = await postSendMail(userEmail);
+    if (emailInfo) {
       setSendBtn(false);
-    }, 1000);
-    // console.log(data);
+    }
   };
 
   const handleCheckbox = (event, item) => {
@@ -144,7 +144,7 @@ const CustomTables = ({
                     className="btn"
                   >
                     <span>
-                      {sendBtn ? (
+                      {sendBtn && item.isChecked ? (
                         <CircularProgress
                           size={12}
                           thickness={5}
