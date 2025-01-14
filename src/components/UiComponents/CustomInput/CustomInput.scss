@@ -1,0 +1,21 @@
+.form-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #ff000025;
+  gap: 8px;
+
+  input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: red;
+    caret-color: red;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}

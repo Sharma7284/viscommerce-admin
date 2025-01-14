@@ -4,10 +4,14 @@ import GridLayout from "../../components/layout/GridLayout/GridLayout";
 
 import { FaUsers, FaBell } from "react-icons/fa";
 import { MdUnsubscribe } from "react-icons/md";
-import { fetchUsersCount } from "../../api/apiEndpoints";
+import { fetchEmailTemplates, fetchUsersCount } from "../../api/apiEndpoints";
+import UploadToastify from "../../components/toastify/UploadToastify/UploadToastify";
+import { toast } from "react-toastify";
+// import CustomDropdown from "../../components/UiComponents/CustomDropdown/CustomDropdown";
 
 const Dashboard = () => {
   const [usersCardData, setUsersCardData] = useState(null);
+  // const [emailTemplates, setEmailTemplates] = useState(null);
 
   useEffect(() => {
     const getUserCount = async () => {
@@ -34,6 +38,13 @@ const Dashboard = () => {
       ]);
     };
     getUserCount();
+
+    const getEmailTemplates = async () => {
+      const { data } = await fetchEmailTemplates();
+      // setEmailTemplates(data.map((m) => ({ value: m?.id, label: m?.subject })));
+    };
+
+    getEmailTemplates();
   }, []);
 
   return (

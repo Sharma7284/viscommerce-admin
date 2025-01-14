@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
 import MainLayout from "./components/layout/MainLayout/MainLayout";
+import EmailTemplates from "./pages/EmailTemplates/EmailTemplates";
 
 function App() {
   const navigate = useNavigate();
@@ -41,6 +42,10 @@ function App() {
                 <Route
                   path="/emails"
                   element={<MailingSystem></MailingSystem>}
+                ></Route>
+                <Route
+                  path="/email-templates"
+                  element={<EmailTemplates></EmailTemplates>}
                 ></Route>
                 <Route path="*" element={<NotFound></NotFound>}></Route>
               </Routes>

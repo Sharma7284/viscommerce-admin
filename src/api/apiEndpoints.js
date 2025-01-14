@@ -13,7 +13,6 @@ export const fetchSubscribedUser = async () => {
     throw error;
   }
 };
-
 export const fetchEmailTemplates = async () => {
   try {
     const response = await axiosInstance.post(`/get-email-templates`);
@@ -32,10 +31,21 @@ export const fetchUsersCount = async () => {
     throw error;
   }
 };
-
 export const postSendMail = async (payload) => {
   try {
     const response = await axiosInstance.post(`/send-email`, payload);
+    return response.data;
+  } catch (error) {
+    console.error(`Error post data:`, error);
+    throw error;
+  }
+};
+export const postEmailTemplates = async (payload) => {
+  try {
+    const response = await axiosInstance.post(
+      `/upload-email-templates`,
+      payload
+    );
     return response.data;
   } catch (error) {
     console.error(`Error post data:`, error);

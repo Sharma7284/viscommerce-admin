@@ -86,6 +86,22 @@
             border-radius: 8px;
             width: 100%;
           }
+          .bagde {
+            padding: 4px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            &.success {
+              background-color: #54bf0050;
+              color: #54bf00;
+            }
+            &.danger {
+              background-color: #ff3d3350;
+              color: #ff3d33;
+            }
+          }
         }
 
         .status {

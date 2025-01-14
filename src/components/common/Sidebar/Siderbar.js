@@ -1,6 +1,7 @@
 import { RiDashboardHorizontalLine } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
+import { TbTemplate } from "react-icons/tb";
 
 const MenuData = [
   {
@@ -12,6 +13,11 @@ const MenuData = [
     label: `Emails`,
     navigate: `emails`,
     startIcon: <MdEmail size={24} />,
+  },
+  {
+    label: `Email Templates`,
+    navigate: `email-templates`,
+    startIcon: <TbTemplate size={24} />,
   },
 ];
 

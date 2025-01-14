@@ -130,7 +130,7 @@ const CustomTables = ({
                     {options &&
                       options?.map((item, index) => (
                         <option key={index} value={item.id}>
-                          {item.subject}
+                          {item?.subject}
                         </option>
                       ))}
                   </select>

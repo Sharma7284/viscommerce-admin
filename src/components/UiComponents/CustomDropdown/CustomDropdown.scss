@@ -1,0 +1,16 @@
+.custom-select-dropdown {
+  padding: 8px;
+  border: none;
+  outline: 2px solid #ff000050;
+  outline-offset: 1px;
+  border-radius: 8px;
+  color: #ff000090;
+  .option {
+    padding: 12px;
+    &:disabled {
+      background-color: #ff000010;
+      color: #00000080;
+      cursor: not-allowed;
+    }
+  }
+}
